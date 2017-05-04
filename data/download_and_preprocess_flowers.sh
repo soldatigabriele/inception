@@ -94,3 +94,19 @@ OUTPUT_DIRECTORY="${DATA_DIR}"
   --validation_directory="${VALIDATION_DIRECTORY}" \
   --output_directory="${OUTPUT_DIRECTORY}" \
   --labels_file="${LABELS_FILE}"
+
+BUILD_SCRIPT="data/build_image_data"
+OUTPUT_DIRECTORY="/Users/gabri/Dropbox/Universita/Tesi/Tensorflow\ Materiale/Dataset_jpg/"
+python data/build_image_data.py \
+  --train_directory=/Users/gabri/Dropbox/Universita/Tesi/Tensorflow\ Materiale/Dataset_jpg/train/ \
+  --validation_directory=/Users/gabri/Dropbox/Universita/Tesi/Tensorflow\ Materiale/Dataset_jpg/val/ \
+  --output_directory=/Users/gabri/Dropbox/Universita/Tesi/Tensorflow\ Materiale/Dataset_jpg/ \
+  --labels_file=/Users/gabri/Dropbox/Universita/Tesi/Tensorflow\ Materiale/Dataset_jpg/mylabels.txt
+
+
+python data/build_image_data.py \
+  --train_directory=/Users/gabri/Downloads/flower_photos/train\
+  --validation_directory=/Users/gabri/Downloads/flower_photos/val\
+  --output_directory=/Users/gabri/Downloads/flower_photos\
+  --labels_file=/Users/gabri/Downloads/flower_photos/labels.txt
+
